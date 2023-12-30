@@ -1,4 +1,5 @@
-import NextLink from 'next/link'
+"use client";
+import { NextLink } from "@/pages/link";
 
 interface Link {
   children: string;
