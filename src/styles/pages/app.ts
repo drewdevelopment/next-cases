@@ -20,7 +20,7 @@ export const Introduction = styled.main`
   header {
     height: 6.25rem;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   span {
@@ -71,5 +71,4 @@ export const CTA = styled.button<ICTA>`
 export const Content = styled.div`
   width: 60rem;
   height: 100vh;
-  background-color: red;
 `;

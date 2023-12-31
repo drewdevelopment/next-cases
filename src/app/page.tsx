@@ -1,10 +1,16 @@
-import Link from "@/components/Link"
+import Image from "next/image"
+import NextCases from "@/assets/next-cases.png"
+import { Container } from "@/styles/pages/home"
 
 export default function Home() {
   return (
-    <div>
-      <h1>Next Cases - Home Page</h1>
-      <Link href="/faq">Go to FAQ</Link>
-    </div>
+    <Container>
+      <Image
+        src={NextCases}
+        alt="Next Cases"
+        width={1280}
+        height={720}
+      />
+    </Container>
   )
 }
