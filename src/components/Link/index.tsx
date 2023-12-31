@@ -1,5 +1,5 @@
 "use client"
-import { NextLink } from "@/styles/link"
+import { NextLink } from "@/styles/components/link"
 
 interface Link {
   children: string;
