@@ -1,5 +1,13 @@
 import StyledComponentsRegistry from '@/lib/registry'
 import type { Metadata } from 'next'
+import { Roboto } from 'next/font/google'
+
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Next Cases',
@@ -13,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={roboto.className}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>

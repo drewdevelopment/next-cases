@@ -1,5 +1,5 @@
-"use client";
-import { NextLink } from "@/pages/link";
+"use client"
+import { NextLink } from "@/styles/link"
 
 interface Link {
   children: string;
