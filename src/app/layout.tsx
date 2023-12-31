@@ -1,6 +1,6 @@
-import StyledComponentsRegistry from '@/lib/registry'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import App from './_app'
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -22,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <App>
+          {children}
+        </App>
       </body>
     </html>
   )
